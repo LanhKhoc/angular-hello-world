@@ -2,7 +2,7 @@ import angular from 'angular';
 import 'angular-ui-router';
 import './assets/scss/main.scss';
 
-import './login';
+import './module/login';
 
 const requires = [
   'ui.router',
@@ -10,8 +10,3 @@ const requires = [
 ];
 
 let appModule = angular.module('root', requires);
-
-appModule.config(['$urlRouterProvider', '$locationProvider', function($urlRouterProvider, $locationProvider) {
-  // $locationProvider.html5Mode(true);
-  // $urlRouterProvider.otherwise('/');
-}])

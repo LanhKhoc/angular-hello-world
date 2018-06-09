@@ -1,0 +1,30 @@
+<section class="mt-5">
+  <div class="container">
+    <h1 class="text-center mb-5">Login</h1>
+    <form novalidate name="fLogin">
+      <div class="form-group row">
+        <label class="col-4 col-form-label text-right">Username</label>
+        <div class="col-4">
+          <input ng-model="LoginCtrl.username" class="form-control" name="username" type="text" required="" />
+          <div ng-show="fLogin.$submitted || fLogin.username.$touched">
+            <small ng-show="fLogin.username.$error.required" class="form-text text-danger">This field can not blank.</small>
+          </div>
+          </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-4 col-form-label text-right">Password</label>
+        <div class="col-4">
+          <input ng-model="LoginCtrl.password" class="form-control" name="password" type="password" required="" />
+          <div ng-show="fLogin.$submitted || fLogin.password.$touched">
+            <small ng-show="fLogin.password.$error.required" class="form-text text-danger">This field can not blank.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group text-center mt-4">
+        <button ng-disabled="fLogin.$invalid" type="submit" class="btn btn-success u-cursor-pointer">Login</button>
+      </div>
+    </form>
+  </div>
+</section>
