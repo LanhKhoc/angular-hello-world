@@ -1,5 +1,4 @@
-// const API_URL = 'http://localhost:9999/api/';
-const API_URL = '';
+const API_URL = 'http://localhost:9999/api';
 
 export {
   API_URL,

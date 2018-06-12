@@ -54,8 +54,7 @@ module.exports = {
     ]
   },
   devServer: {
-    port: 9999,
-    // contentBase: __dirname + '/dist'
+    port: 3000,
   },
   plugins: [
     htmlPlugin,
